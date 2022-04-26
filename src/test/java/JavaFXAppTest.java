@@ -8,9 +8,9 @@ class JavaFXAppTest {
     void computeDivideTest() {
         int expected = 3;
         int actual = app.computeDivide(5,2);
-        assertEquals(expected,actual);
+        assertEquals(expected,actual); // Tests round up
         expected = 1;
         actual = app.computeDivide(10,8);
-        assertEquals(expected, actual);
+        assertEquals(expected, actual); // Tests round down
     }
 }
