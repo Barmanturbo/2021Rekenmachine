@@ -10,9 +10,8 @@ class JavaFXAppTest {
         int a = 9;
         int b = 7;
         int expectedResult = 63;
-        int realResult;
         //act
-        realResult = app.computeMultiply(a, b);
+        int realResult = app.computeMultiply(a, b);
         //assert
         assertEquals(realResult, expectedResult);
     }
