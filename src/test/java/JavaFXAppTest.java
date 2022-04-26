@@ -5,6 +5,7 @@ class JavaFXAppTest {
     static JavaFXApp app = new JavaFXApp();
 
     @Test
+
     void computeDivideTest() {
         int expected = 3;
         int actual = app.computeDivide(5,2);
@@ -12,5 +13,16 @@ class JavaFXAppTest {
         expected = 1;
         actual = app.computeDivide(10,8);
         assertEquals(expected, actual); // Tests round down
+    }
+  
+    void testComputeMultiply(){
+        //arrange
+        int a = 9;
+        int b = 7;
+        int expectedResult = 63;
+        //act
+        int realResult = app.computeMultiply(a, b);
+        //assert
+        assertEquals(realResult, expectedResult);
     }
 }
