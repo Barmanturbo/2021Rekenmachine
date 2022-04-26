@@ -1,4 +1,7 @@
 import org.junit.jupiter.api.Test;
+
+import javax.swing.*;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class JavaFXAppTest {
@@ -15,12 +18,13 @@ class JavaFXAppTest {
   
     @Test
     void testComputeMultiply(){
+        IComputation calc = new MultiplyComputation();
         //arrange
         int a = 9;
         int b = 7;
         int expectedResult = 63;
         //act
-        int realResult = app.computeMultiply(a, b);
+        int realResult = calc.compute(a, b);
         //assert
         assertEquals(realResult, expectedResult);
     }
@@ -28,7 +32,7 @@ class JavaFXAppTest {
     @Test
         void plusTest () {
         int expected = 3;
-        int actual =app.computeAdd(1,2);
+        int actual = app.computeAdd(1,2);
         assertEquals(expected,actual);
     }
 }

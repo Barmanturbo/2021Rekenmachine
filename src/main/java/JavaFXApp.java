@@ -33,9 +33,6 @@ public class JavaFXApp extends Application {
         return number1+number2;
     }
 
-    protected int computeMultiply (int number1, int number2) {
-        return (Math.multiplyExact(number1, number2));
-    }
 
     private void compute (String operator) {
         IComputation computation;
