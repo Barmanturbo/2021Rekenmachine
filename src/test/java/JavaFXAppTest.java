@@ -27,9 +27,12 @@ class JavaFXAppTest {
     }
   
     @Test
+        //arrange
         void plusTest () {
         int expected = 3;
+        //act
         int actual =app.computeAdd(1,2);
+        //assert
         assertEquals(expected,actual);
     }
 }
