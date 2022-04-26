@@ -30,7 +30,7 @@ public class JavaFXApp extends Application {
     }
 
     protected int computeAdd (int number1, int number2) {
-        return 0;
+        return number1+number2;
     }
 
     protected int computeMultiply (int number1, int number2) {
