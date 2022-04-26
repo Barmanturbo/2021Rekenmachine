@@ -6,11 +6,18 @@ class JavaFXAppTest {
 
     @Test
     void computeDivideTest() {
+        //arrange1
         int expected = 3;
+        //act1
         int actual = app.computeDivide(5,2);
+        //assert1
         assertEquals(expected,actual); // Tests round up
+
+        //arrange2
         expected = 1;
+        //act2
         actual = app.computeDivide(10,8);
+        //assert2
         assertEquals(expected, actual); // Tests round down
     }
   
