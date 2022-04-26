@@ -31,8 +31,9 @@ class JavaFXAppTest {
   
     @Test
         void plusTest () {
+        IComputation calc = new PlusComputation();
         int expected = 3;
-        int actual = app.computeAdd(1,2);
+        int actual = calc.compute(1,2);
         assertEquals(expected,actual);
     }
 }

@@ -29,13 +29,8 @@ public class JavaFXApp extends Application {
         return Integer.parseInt (textField.getText ());
     }
 
-    protected int computeAdd (int number1, int number2) {
-        return number1+number2;
-    }
-
-
     private void compute (String operator) {
-        IComputation computation;
+        IComputation computation = null;
         int result;
         int number1 = getNumberFromTextField (txtNumber1);
         int number2 = getNumberFromTextField (txtNumber2);
