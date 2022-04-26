@@ -1,3 +1,3 @@
 public interface IComputation {
-    public int compute(int num1, int num2);
+    public abstract int compute(int num1, int num2);
 }
